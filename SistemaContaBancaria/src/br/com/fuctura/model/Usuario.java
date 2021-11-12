@@ -6,8 +6,19 @@ public class Usuario {
 	private int idade;
 	private String cpf;
 
+	
+	
+	
 	// ctrl + shift + f - organizar
 	
+	public Usuario(String nome, String email, int idade, String cpf) {
+		super();
+		this.nome = nome;
+		this.email = email;
+		this.idade = idade;
+		this.cpf = cpf;
+	}
+
 	public String getNome() {
 		return nome;
 	}
@@ -38,6 +49,11 @@ public class Usuario {
 
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
+	}
+
+	@Override
+	public String toString() {
+		return "Usuario [nome=" + nome + ", email=" + email + ", idade=" + idade + ", cpf=" + cpf + "]";
 	}
 
 }
